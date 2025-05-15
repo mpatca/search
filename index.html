@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meine Suchmaschinen Startseite</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .search-container {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+
+        .search-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #333;
+            margin-top: 0;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meine Suchmaschinen</h1>
+    
+    <div class="search-container">
+        <!-- Google Suche -->
+        <div class="search-box">
+            <h2>Google</h2>
+            <form action="https://www.google.com/search" target="_blank">
+                <input type="text" name="q" placeholder="Google Suche..." autofocus>
+                <button type="submit">Suchen</button>
+            </form>
+        </div>
+
+        <!-- DuckDuckGo Suche -->
+        <div class="search-box">
+            <h2>DuckDuckGo</h2>
+            <form action="https://duckduckgo.com/" target="_blank">
+                <input type="text" name="q" placeholder="DuckDuckGo Suche...">
+                <button type="submit">Suchen</button>
+            </form>
+        </div>
+
+        <!-- Wikipedia Suche -->
+        <div class="search-box">
+            <h2>Wikipedia</h2>
+            <form action="https://de.wikipedia.org/w/index.php" target="_blank">
+                <input type="text" name="search" placeholder="Wikipedia Suche...">
+                <button type="submit">Suchen</button>
+            </form>
+        </div>
+
+        <!-- YouTube Suche -->
+        <div class="search-box">
+            <h2>YouTube</h2>
+            <form action="https://www.youtube.com/results" target="_blank">
+                <input type="text" name="search_query" placeholder="YouTube Suche...">
+                <button type="submit">Suchen</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
